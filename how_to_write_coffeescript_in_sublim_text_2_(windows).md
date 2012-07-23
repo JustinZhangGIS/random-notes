@@ -7,7 +7,7 @@
 
 ### 安装CoffeeScript
 
-打开cmd，切换到C:\nodejs目录下，执行
+打开cmd，切换到`C:\nodejs`目录下，执行
 
 	npm install -g coffee-script
 
@@ -32,7 +32,11 @@
 
 ### 注意事项
 
-自动安装的Build支持在Windows下有点问题，打开`C:\Users\jimmy\AppData\Roaming\Sublime Text 2\Packages\CoffeeScript\CoffeeScript.sublime-build`文件。此为Win7下当前用户路径，注意找到到你的当前路径。然后将
+自动安装的Build支持在Windows下有点问题，打开
+
+	C:\Users\jimmy\AppData\Roaming\Sublime Text 2\Packages\CoffeeScript\CoffeeScript.sublime-build
+
+此为Win7下当前用户路径，注意替换为你机器上的当前用户路径。然后将
 
 	"cmd": ["coffee","-c","$file"] 
 
@@ -42,7 +46,7 @@
 
 ### Hello Coffee!
 
-下面，新建`hello.coffe`文件
+下面，新建`hello.coffee`文件
 
 	console.log "Hello Coffee!"
 
