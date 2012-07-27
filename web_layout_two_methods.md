@@ -2,6 +2,10 @@
 
 ## 简介
 
+页面将有一个高度固定40px的header-bar，余下部分最有分栏，左边栏宽度360px，右边栏填满余下部分。效果参考：
+
+[http://spine-contacts.herokuapp.com](http://spine-contacts.herokuapp.com/)
+
 #### 页面html
 
 	<body>
