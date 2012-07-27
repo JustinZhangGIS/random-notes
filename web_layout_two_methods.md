@@ -2,7 +2,7 @@
 
 ## 简介
 
-页面将有一个高度固定40px的header-bar，余下部分最有分栏，左边栏宽度360px，右边栏填满余下部分。效果参考：
+页面将有一个高度固定40px的header-bar，余下部分高度方向填满，左右分栏，左边栏固定宽度360px，右边栏填满余下部分。效果参考：
 
 [http://spine-contacts.herokuapp.com](http://spine-contacts.herokuapp.com/)
 
