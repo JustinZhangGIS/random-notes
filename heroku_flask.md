@@ -6,6 +6,9 @@
 install the toolbelt, then:
 	
 	$ heroku login
+	$ heroku apps #查看所有应用
+	$ heroku run COMMAND #例如heroku run python app.py
+	$ heroku logs
 
 ## git 
 

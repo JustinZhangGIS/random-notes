@@ -38,4 +38,5 @@ Verify that the fingerprint matches the one here and type "yes".
 ## Use
 
 参考[http://rogerdudler.github.com/git-guide/](http://rogerdudler.github.com/git-guide/)
+
 	
