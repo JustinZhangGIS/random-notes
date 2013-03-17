@@ -15,3 +15,6 @@
 ## pull request
 
 参考[Fork and Pull](http://www.worldhello.net/gotgithub/04-work-with-others/010-fork-and-pull.html)
+
+## 资源
+[Git常用命令备忘](http://robbinfan.com/blog/34/git-common-command)
