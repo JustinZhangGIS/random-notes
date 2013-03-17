@@ -13,6 +13,32 @@ install the toolbelt, then:
 	$ heroku apps:destroy APP_NAME #删除应用
 	$ heroku apps:info --app APP_NAME
 	$ heroku apps:open --app APP_NAME #浏览器中打开该应用
+	$ heroku rename NEW_APP_NAME #修改应用名称
+	
+## PostgreSQL
+	$ pip install psycopg2
+	$ heroku heroku addons:add heroku-postgresql:dev
+	Adding heroku-postgresql:dev on tbbttrans... done, v7 (free)
+	Attached as HEROKU_POSTGRESQL_AQUA_URL
+	Database has been created and is available
+ 	! This database is empty. If upgrading, you can transfer
+ 	! data from another database with pgbackups:restore.
+	Use `heroku addons:docs heroku-postgresql:dev` to view documentation.
+	
+then,
+
+	$ heroku pg:promote HEROKU_POSTGRESQL_AQUA_URL
+	Promoting HEROKU_POSTGRESQL_AQUA_URL to DATABASE_URL... done
+	
+and, 
+
+	app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+	
+ref to this blog post: [flask-and-postgresql-on-heroku](http://blog.y3xz.com/blog/2012/08/16/flask-and-postgresql-on-heroku/).
+
+## Scheduled Jobs
+
+ref to this doc:[clock processes python](https://devcenter.heroku.com/articles/clock-processes-python).
 
 ## git 
 
@@ -36,6 +62,10 @@ use venv
 generate the dependency
 
 	$ pip freeze > requirements.txt
+	
+install all lib in the requirements.txt
+
+	$ pip install -r requirements.txt
 	
 	
 ## gunicorn
