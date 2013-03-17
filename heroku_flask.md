@@ -58,6 +58,7 @@ use venv
 	$ source venv/bin/activate
 	$ pip install flask
 	$ pip install Flask-Sqlachelmy
+	$ deactivate
 
 generate the dependency
 
