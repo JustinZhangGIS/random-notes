@@ -80,12 +80,12 @@ A君是Pocket的忠实粉丝，平时在网上闲逛，遇到有意思的文章�
 			url = pocket.get_authorize_url(code)
 			#保存code和username
 			user = User(username)
-          user.pocket_code = code
-          db.session.add(user)
-          db.session.commit()
+			user.pocket_code = code
+			db.session.add(user)
+			db.session.commit()
 			rmsg = u'点击下面链接登陆Pocket并授权给给我\n\n' + rmsg.encode('utf-8')
-    	return response_text_msg(msg, rmsg)
-    return help_msg()
+    		return response_text_msg(msg, rmsg)
+    	return help_msg()
 
 步骤5
 
@@ -107,13 +107,13 @@ A君是Pocket的忠实粉丝，平时在网上闲逛，遇到有意思的文章�
 		urls = re.findall(r, content)
 		rmsg = u''
 		user = User.query.filter_by(username=username).first()
-      	pocket = Pocket(POCKET_CONSUMER_KEY)
-       pocket.set_access_token(user.pocket_token)
+		pocket = Pocket(POCKET_CONSUMER_KEY)
+		pocket.set_access_token(user.pocket_token)
 		for url in urls:
-       	itemjson = pocket.add(url=url)
-       	item = json.dumps(itemjson)
-       	rmsg += u'已添加"%s"至Pocket\n' % item['title']
-       return rmsg
+			itemjson = pocket.add(url=url)
+			item = json.dumps(itemjson)
+			rmsg += u'已添加"%s"至Pocket\n' % item['title']
+		return rmsg
        
 ## 用法
 
