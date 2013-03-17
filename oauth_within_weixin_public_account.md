@@ -121,6 +121,6 @@ A君想要收藏小道君发送的文章“「大概8点20分发」”，在微�
 
 	http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5ODIyMTE0MA==&appmsgid=10000250&itemidx=1#wechat_redirect
 	
-这样，A君就可以在3月17日的早晨大概8点20分在Pocket中欣赏这片好文了。你不妨也试试看：
+这样，A君就可以在3月17日的早晨大概8点20分在Pocket中欣赏这篇好文了。你不妨也试试看：
 
 ![image](http://url2pocket.sinaapp.com/static/img/qrcode_for_gh_7fce1bf79138_258.jpg)
